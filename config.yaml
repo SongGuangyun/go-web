@@ -1,0 +1,20 @@
+app:
+  appName: goweb项目
+  appEnv: local
+  appPort: 8888
+
+log:
+  storageLocation: ./logs/
+  rotationTime: 24 # 日志切割时间间隔
+  remainRotationCount: 5 #只保留最近的N个日志文件
+
+mysql:
+  dbHost: 127.0.0.1
+  dbPort: 33060
+  dbDatabase: homestead
+  dbUsername: homestead
+  dbPassword: secret
+
+jwt:
+  signingKey: j2UaR328J2jraEs8a1
+  expireTime: 120 #单位小时
